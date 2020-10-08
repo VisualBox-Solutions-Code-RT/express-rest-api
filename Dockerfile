@@ -13,4 +13,4 @@ CMD ["node", "app.js"]
 # docker build -t express-api:1.0.0 .
 
 # Run your Docker image and pass configuration file
-# docker run --init -p 3000:3000 --env-file=.env.development express-api:1.0.0
+# docker run --init -p 3000:3000 --env-file=.env express-api:1.0.0
