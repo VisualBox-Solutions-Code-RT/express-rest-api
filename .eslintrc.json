@@ -1,0 +1,44 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "es2020": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "rules": {
+    // https://eslint.org/docs/user-guide/configuring#configuring-rules
+    "semi": ["warn", "never"],
+    "quotes": ["warn", "single"],
+    "eqeqeq": "warn",
+    "curly": "warn",
+    "no-empty-function": "error",
+    "no-extra-parens": "warn",
+    "no-use-before-define": "error",
+    "no-label-var": "error",
+    "no-undef-init": "error",
+    "no-undefined": "error",
+    "camelcase": "warn",
+    "capitalized-comments": "warn",
+    "indent": "warn",
+    "default-case": "warn",
+    "dot-location": ["warn", "property"],
+    "dot-notation": "warn",
+    "arrow-spacing": "warn",
+    "object-curly-spacing": ["warn", "always"],
+    "no-eq-null": "warn",
+    "no-return-await": "warn",
+    "require-await": "warn",
+    "no-self-compare": "warn",
+    "yoda": "warn"
+  },
+  "globals": {
+    // https://eslint.org/docs/user-guide/configuring#specifying-globals
+  }
+}
+
+// Disable eslint rules with comments
+// https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments

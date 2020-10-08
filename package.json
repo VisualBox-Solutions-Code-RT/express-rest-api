@@ -1,0 +1,46 @@
+{
+    "name": "express-api",
+    "version": "1.0.0",
+    "description": "Node.js with Express.js REST API",
+    "repository": {
+        "url": "https://github.com/shammelburg/express-api"
+    },
+    "main": "app.js",
+    "engines": {
+        "node": "12.18.4",
+        "npm": "6.14.8"
+    },
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon -r dotenv/config app.js dotenv_config_path=.env",
+        "lint": "eslint . --ext .js",
+        "seed:sqldb": "node data/sql/seed/seed-objects.js dotenv_config_path=.env",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Sander Hammelburg",
+    "license": "MIT",
+    "dependencies": {
+        "@azure/storage-blob": "12.2.1",
+        "body-parser": "1.19.0",
+        "camelcase-keys": "6.1.2",
+        "chalk": "3.0.0",
+        "compression": "1.7.4",
+        "dotenv": "8.2.0",
+        "express": "4.17.1",
+        "express-fileupload": "1.2.0",
+        "helmet": "3.21.3",
+        "jsonwebtoken": "8.5.1",
+        "morgan": "1.9.1",
+        "mssql": "6.1.0",
+        "nodemailer": "6.4.10",
+        "nodemailer-express-handlebars": "4.0.0",
+        "qrcode": "1.4.4",
+        "speakeasy": "2.0.0",
+        "uuid": "7.0.1",
+        "winston": "3.3.3"
+    },
+    "devDependencies": {
+        "eslint": "7.4.0",
+        "nodemon": "2.0.2"
+    }
+}
