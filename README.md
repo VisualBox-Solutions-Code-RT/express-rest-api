@@ -35,7 +35,7 @@ This is still a work in progress and will be updated when possible. Any suggesti
 
 **Getting Started**
 1. run `npm install`
-2. update `.env` file with SQL and SendGrid credentials
+2. create `.env` from `.env.example` file and set SQL and SendGrid credentials
 3. apply `data/sql/seed/create-objects.sql` script to your SQL DB
 4. run `npm run dev`
 5. import `Express API.postman_collection.json` into Postman
