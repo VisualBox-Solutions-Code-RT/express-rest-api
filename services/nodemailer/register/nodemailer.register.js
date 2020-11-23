@@ -8,7 +8,7 @@ module.exports = function (to, token) {
         to,
         cc: [],
         bcc: [],
-        subject: 'Express App Registration',
+        subject: process.env.EMAIL_SUBJECT_REGISTRATION,
         template: templateName,
         context: {
             token,

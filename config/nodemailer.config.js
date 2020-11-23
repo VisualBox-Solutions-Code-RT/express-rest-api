@@ -2,9 +2,8 @@
  * Nodemailer configuration 
  */
 module.exports = {
-    service: process.env.NM_PROVIDER,
     auth: {
-        user: process.env.NM_USER,
-        pass: process.env.NM_PASS
+        // eslint-disable-next-line camelcase
+        api_key: process.env.SENDGRID_API_KEY
     }
 }

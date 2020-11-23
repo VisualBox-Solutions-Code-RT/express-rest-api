@@ -8,7 +8,7 @@ module.exports = function (to, token) {
         to,
         cc: [],
         bcc: [],
-        subject: 'Express App Forgot Password',
+        subject: process.env.EMAIL_SUBJECT_FORGOT,
         template: templateName,
         context: {
             token,
