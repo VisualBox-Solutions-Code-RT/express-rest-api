@@ -202,13 +202,6 @@ BEGIN
 		  WHERE [UserId] = @UserId AND [RoleId] = @RoleId
 
 	DECLARE @RoleName nvarchar(50) = (SELECT [Name] FROM [Node].[Roles] WHERE [Id] = @RoleId)
-
-	IF @RoleName = 'Supplier'
-	BEGIN
-		UPDATE [Node].[Users]
-		   SET [SupplierId] = NULL
-		 WHERE [Id] = @UserId
-	END
 END
 
 
